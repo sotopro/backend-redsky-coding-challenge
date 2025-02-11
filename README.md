@@ -1,9 +1,9 @@
-# Backend Redsku Coding Challenge
+# Backend Redsky Coding Challenge
 
 ## Project Structure
 
 ```
-backend-redsku-coding-challenge/
+backend-redsky-coding-challenge/
 │── src/
 │   ├── application/        # Business logic (use cases)
 │   │   ├── use-cases/
@@ -41,8 +41,8 @@ backend-redsku-coding-challenge/
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/sotopro/backend-redsku-coding-challenge.git
-   cd backend-redsku-coding-challenge
+   git clone https://github.com/sotopro/backend-redsky-coding-challenge.git
+   cd backend-redsky-coding-challenge
    ```
 
 2. Install dependencies:

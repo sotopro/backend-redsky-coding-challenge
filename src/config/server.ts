@@ -10,10 +10,8 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Create a single instance of the repository
 const userRepository = new InMemoryUserRepository();
 
-// Fetch initial users before starting the server
 const fetchInitialUsers = new FetchInitialUsers(userRepository);
 fetchInitialUsers
   .execute()
@@ -28,7 +26,6 @@ fetchInitialUsers
 
     app.use(express.json());
 
-    // Pass the shared repository instance to routes
     app.use('/api', userRoutes(userRepository));
 
     app.listen(PORT, () => {

@@ -6,7 +6,7 @@ export class CreateUser {
 
   async execute(userData: Omit<User, 'id'>): Promise<User> {
     const newUser: User = {
-      id: Date.now(), // Simulación de un ID único
+      id: Date.now(),
       ...userData,
     };
 
